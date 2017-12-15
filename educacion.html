@@ -9,20 +9,95 @@
 		
 	 	<header>
 	 		<svg width="250" height="130" stroke="black" stroke-width="1">
-				<ellipse cx="100" cy="70" rx="85" ry="55" fill="BLUE" />
+				<ellipse cx="100" cy="70" rx="85" ry="55" fill="#009898" />
 		 		<text fill="#ffffff" font-size="45" font-family="Verdana" x="40" y="80">ASIG</text>
 	 		</svg>
 
 			<h1>Resumen Curricular</h1>
 			<h2>Abigail Stefanie Interiano Grande</h2>
 		</header>
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="educacion.html">Educación</a></li>
-				<li><a href="experiencia.html">Experiencia</a></li>
-			</ul>
 
-		
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="educacion.html">Educación</a></li>
+			<li><a href="experiencia.html">Experiencia</a></li>
+		</ul>
+		<h2>Educación</h2>
+
+		<table border="1" bordercolor="black" cellpadding="12">
+			<tr>				
+				<th>Año</th>
+				<th>Institución</th>
+				<th>Lugar</th>
+				<th>¿Culminó?</th>				
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+
+		<form autocomplete="on" name="Agregar Estudios">
+				<table>
+					<tr>
+						<td> 
+							<label for="anio">Año:</label>
+						</td>
+						<td>
+							<select name="anio" required="">
+							<option value="1">2017</option>	
+							<option value="2">2016</option>
+							<option value="3">2015</option>
+							<option value="4">2014</option>
+							<option value="5">2013</option>
+							<option value="6">2012</option>
+							<option value="7">2011</option>
+							<option value="8">2010</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="institucion">Institución:</label>
+						</td>
+						<td>
+							<input type="text" name="institucion" placeholder="Ingrese la institución donde curso sus estudios" required="">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="lugar">Lugar:</label>
+						</td>
+						<td>
+							<input type="text" name="lugar" placeholder="Ingrese el lugar donde se encuentra la institución" required="">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="culmino">¿Culminó?:</label>
+						</td>
+						<td>
+							<input type="radio" name="culmino" value="SI" checked>Si
+						
+							<input type="radio" name="culmino" value="NO" checked>No
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="submit" name="enviar" value="Enviar">
+						</td>
+					</tr>	
+
+				</table>
+		</form>		
 	</body>	
 
 	<footer>
@@ -31,6 +106,4 @@
 			<p><img src="img/llamada.png" alt="Telefono:"/> 7953-2601</p>
 	</footer>
 	
-
-
 </html>
